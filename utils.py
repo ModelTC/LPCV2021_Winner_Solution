@@ -27,7 +27,7 @@ import math
 from threading import Thread
 from queue import Queue
 
-from nms.cpu_nms import nms
+from cpu_nms import nms
 
 def letter_box(yolox, image, input_w, input_h):
     scale = min(input_w / image.shape[1], input_h / image.shape[0])
